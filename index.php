@@ -10,8 +10,26 @@
  */
 // TODO Votre code ici.
 
+define("NB1",12);
+define("NB2",2);
 
+echo "<p>NB1 * NB2 = ".NB1*NB2."</p>";
+
+define("STR1","C'est cool le PHP");
+
+echo "<p>(NB1 + NB2) * la taille de STR1 = ".(NB1+NB2)*strlen(STR1)."</p>";
 /**
  * 6. Utilisez la bonne constante magique et éventuellement la bonne fonction pour afficher un maximum d'informations sur la page actuelle4
  */
 // TODO Votre code ici.
+
+
+var_dump(__FILE__);
+echo "<br>";
+echo  basename(__FILE__);
+echo "<br>";
+echo dirname(__FILE__);
+echo "<br>";
+echo pathinfo(__FILE__,PATHINFO_ALL);
+echo "<br>";
+echo realpath(__FILE__);
